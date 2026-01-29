@@ -190,8 +190,7 @@
         function pop_ProjectRecon20202026Trackers_2(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <th scope="row">CollectedOn</th>\
-                        <td>' + (feature.properties['CollectedOn'] !== null ? autolinker.link(String(feature.properties['CollectedOn']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <td class="visible-with-data" id="Event ID" colspan="2"><strong>Event ID</strong><br />' + (feature.properties['Event ID'] !== null ? autolinker.link(String(feature.properties['Event ID']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['EventLocation'] !== null ? autolinker.link(String(feature.properties['EventLocation']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
